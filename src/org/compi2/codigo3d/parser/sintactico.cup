@@ -26,9 +26,10 @@ terminal String ID, ENTERO, DECIMAL;
 terminal TokenC3D MAS, MENOS, MULT, DIV, POT, PAR_IZQ, PAR_DER,MAYOR,MENOR,MAYORI,MENORI,IGUAL,DIFERENTE,AND,OR,NOT;
 nonterminal NodoC3D inicial, expresion;
 
-precedence left MAYOR,MENOR,MAYORI,MENORI,IGUAL,DIFERENTE;
 precedence left AND,OR;
 precedence right NOT;
+precedence left MAYOR,MENOR,MAYORI,MENORI,IGUAL,DIFERENTE;
+
 precedence left MAS, MENOS;
 precedence left MULT, DIV; 
 precedence right POT; 
